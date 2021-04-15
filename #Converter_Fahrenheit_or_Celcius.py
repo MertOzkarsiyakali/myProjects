@@ -33,13 +33,13 @@ value = float(input("Enter your degree in local type: "))
 if not value:
     raise ValueError("You should enter a value for conversion")
 
-#Check for location is one of the Fahrenhait using countries
+#Check for location is one of the Fahrenheit using countries
 #If it is, use fahrenhait to celcius conversion         
 if location in fahrenheit_countries:
     result = fahrenheit_to_celcius(value)
     print(f"Your degree (Fahrenheit) approximately equals to {result} Celcius degree")
 
-#If the location is not one of the countries which use Fahrenhait, 
+#If the location is not one of the countries which use Fahrenheit, 
 # then use Fahrenhait to Celcius conversion
 else:
     result = celcius_to_fahrenheit(value)
